@@ -1,7 +1,6 @@
 import java.math.BigInteger;
 import java.util.Scanner;
 
-
 public class PowerCalculator {
     public static void main(String[] args) {
         BigInteger base = BigInteger.valueOf(2);
@@ -16,10 +15,17 @@ public class PowerCalculator {
     }
 
     public static BigInteger calculatePower(BigInteger base, int exponent) {
-        BigInteger result = BigInteger.ONE;
+        if (exponent == 0) {
+            return BigInteger.ONE;
+        }
 
-        for (int i = 0; i < exponent; i++) {
-            result = result.multiply(base);
+        BigInteger result = BigInteger.ONE;
+        while (exponent > 0) {
+            if (exponent % 2 == 1) {
+                result = result.multiply(base);
+            }
+            base = base.multiply(base);
+            exponent /= 2;
         }
 
         return result;
