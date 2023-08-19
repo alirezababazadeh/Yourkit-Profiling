@@ -76,3 +76,28 @@ public static void temp() {
 همانطور که مشاهده می‌شود، دیگر علامت fire وجود ندارد و میزان مصرف بسیار پایین آمده است که نتیجه مطلوب ما نیز همین بوده است.
 
 ## سناریو دوم
+
+در این سناریو میخواهیم 2 به توان عدد های مختلف از دو روش بهینه و غیر بهینه بررسی کنیم.
+
+### روش غیر بهینه
+
+برای مثال در اینجا 2 به توان 1000 را بررسی می‌کنیم . در این روش با استفاده از حلقه هربار بار ضرب در عدد قبلی آن را حساب می کنیم.
+
+![image](https://github.com/alirezababazadeh/Yourkit-Profiling/assets/45295180/12fe0238-6d1d-4159-b1a6-11f542deb8f2)
+
+![image13](https://github.com/alirezababazadeh/Yourkit-Profiling/assets/45295180/077e472f-7140-4c15-b38b-813a0570c481)
+
+![image2](https://github.com/alirezababazadeh/Yourkit-Profiling/assets/45295180/35509910-9eeb-4938-8098-75241a583194)
+
+### روش بهینه
+
+دقیقا مراحل بالا را طی کردیم اما این بار روش محاسبه بهینه بود که می ‌توانید بینید.
+
+![image](https://github.com/alirezababazadeh/Yourkit-Profiling/assets/45295180/a3249965-cfb5-4050-b80d-b8cd9fbf4663)
+
+حال با استفاده از برنامه your kit منابع استفاده شده را بررسی می کنیم.
+
+![image4](https://github.com/alirezababazadeh/Yourkit-Profiling/assets/45295180/a6ce2ba0-de5e-48f1-bcb6-22739b8bfeaa)
+
+![image10](https://github.com/alirezababazadeh/Yourkit-Profiling/assets/45295180/788b9657-99c3-4b2e-b7a6-8db45212b99a)
+
